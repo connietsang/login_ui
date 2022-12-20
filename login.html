@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" type="text/css" href="favorites.css"> -->
+  <title> SkyMail Login </title>
+
+  <style>
+    body {
+      background-image: url("https://img.freepik.com/free-photo/blue-sky-clouds-watercolor-texture-background_1409-1216.jpg?w=2000");
+      background-size: cover;
+      min-height: 100vh;
+      background-repeat: no-repeat;
+      font-family: "Helvetica";
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: rgb(73, 144, 199);
+      height: 100%
+    }
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    .login-box {
+      width: 20%;
+      background-color: transparent;
+      padding: 15px;
+      border: 1px ridge black;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px 0px rgba(51, 101, 138, 0.75);
+
+    }
+
+    .login-box input {
+      width: 95%;
+      margin-bottom: 10px;
+    }
+
+    .login-box input:focus {
+      border: 3px solid #F6AE2D;
+    }
+
+    .login-box button {
+      background-color: #F6AE2D;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      width: 97%;
+      padding: 10px 30px;
+      white-space: nowrap;
+    }
+
+    .login-box button:hover {
+      background-color: rgb(218, 150, 25);
+      transition: 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Sign in to SkyMail</h2>
+  <script>
+    function check() {
+      const isValidEmail = this.loginform.email.checkValidity();
+      const noPassword = (this.loginform.password.value === "");
+      if (!isValidEmail) {
+        alert("Please enter a valid email.");
+      } else if (noPassword) {
+        alert("Please enter a password.");
+      } else {
+        alert("Real email service coming...maybe someday.");
+      }
+    }
+  </script>
+  <div class="login-box">
+    <form name="loginform" action="#">
+      <label for="email"> Email address</label> <br>
+      <input type="email" id="email" name="email" placeholder="johnsmith@skymail.com" required> <br>
+      <label for="password"> Password </label> <br>
+      <input type="password" id="password" name="password" placeholder="*****" required> <br>
+      <button type="submit" onclick="check()"> Login </button>
+    </form>
+  </div>
+  <p>New to SkyMail? <a href="#">Register now.</a></p>
+</body>
+
+</html>
