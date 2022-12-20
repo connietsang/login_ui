@@ -21,9 +21,10 @@
       height: 100%
     }
 
-    h2,
-    p {
-      text-align: center;
+    h1 {
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      -webkit-font-smoothing: none;
+      /* 0px 2px 2px rgba(51, 101, 138, 0.4); */
     }
 
     .login-box {
@@ -59,11 +60,20 @@
       background-color: rgb(218, 150, 25);
       transition: 1s;
     }
+
+    ::-moz-selection {
+      /* Code for Firefox */
+      background: rgb(49, 110, 156, 0.5);
+    }
+
+    ::selection {
+      background: rgb(49, 110, 156, 0.5);
+    }
   </style>
 </head>
 
 <body>
-  <h2>Sign in to SkyMail</h2>
+  <h1>Sign in to SkyMail</h1>
   <script>
     function check() {
       const isValidEmail = this.loginform.email.checkValidity();
