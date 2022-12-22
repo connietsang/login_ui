@@ -1,0 +1,62 @@
+body {
+  background-image: url("https://img.freepik.com/free-photo/blue-sky-clouds-watercolor-texture-background_1409-1216.jpg?w=2000");
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  font-family: "Helvetica";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(73, 144, 199);
+  height: 100%
+}
+
+h1 {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  -webkit-font-smoothing: none;
+  /* 0px 2px 2px rgba(51, 101, 138, 0.4); */
+}
+
+.login-box {
+  width: 20%;
+  background-color: transparent;
+  padding: 15px;
+  border: 1px ridge black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 0px rgba(51, 101, 138, 0.75);
+
+}
+
+.login-box input {
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+.login-box input:focus {
+  border: 3px solid #F6AE2D;
+}
+
+.login-box button {
+  background-color: #F6AE2D;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 97%;
+  padding: 10px 30px;
+  white-space: nowrap;
+}
+
+.login-box button:hover {
+  background-color: rgb(218, 150, 25);
+  transition: 1s;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: rgb(49, 110, 156, 0.5);
+}
+
+::selection {
+  background: rgb(49, 110, 156, 0.5);
+}
